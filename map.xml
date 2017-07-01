@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<config>
+	<rooms>
+		<room id="1">
+		  <description>Zoldello reten allsz egy hegy labanal. Delre meredek ut visz felfele, eszakra egy barlang bejaratat latod.</description>
+		  <characters>PoTa</characters>
+		  <exits>E15,D5</exits>
+		</room>
+		<room id="2">
+		  <description>Zoldello reten vagy a folyo nyugati oldalan.</description>
+		  <characters></characters>
+		  <exits>D6</exits>
+		  <objects>nyakorv</objects>
+		</room>
+		<room id="3">
+		  <description>Zoldello reten vagy a folyo keleti oldalan. A parton horgaszstegeket latsz. A retet del fele erdo szegelyezi, mintha utat is latnal arra.</description>
+		  <characters></characters>
+		  <exits>D7,K4</exits>
+		</room>
+		<room id="4">
+		  <description>Vasuti megalloban allsz, a sinek eszak fele vezetnek,de nem tudod pontosan, hova, mert elegge kanyargosnak tunik.</description>
+		  <characters></characters>
+		  <exits>E14,D8,NY3</exits>
+		  <objects>horgok</objects>
+		</room>
+		<room id="5">
+		  <description>Meredek sziklaparkanyon allsz, eszak fele lejtos ut visz a volgybe, delre meredeken felfele folytatodik az osveny, keletre lepcsot talalsz, mely valoszinuleg a folyoparti faluba vezethet, nyugatra pedig barlang bejaratat latod.</description>
+		  <characters></characters>
+		  <exits>E1,K6,D9,NY16</exits>
+		  <objects>kulacs</objects>
+		</room>
+		<room id="6">
+		  <description>Kis folyoparti falu foteren vagy. Eppen piac van, mindenfelet arulnak a helybeliek, de foleg halat.</description>
+		  <characters>_sh</characters>
+		  <exits>E2,D10,NY5</exits>
+		</room>
+		<room id="7">
+		  <description>Suru erdoben talalod magad, az uton eszak fele es kelet fele mehetsz tovabb.</description>
+		  <characters></characters>
+		  <exits>K8,E3</exits>
+		  <objects>hasis</objects>
+		</room>
+        <room id="8">
+            <description>Suru erdoben vagy egy utelagazas kozepen. Egy korhadt fatabla igazit utba, eszak fele vasutallomast jelez, nyugatra folyot, delre pedig egy falu nevet latod kiirva.</description>
+            <characters></characters>
+            <exits>E4,NY7,D12</exits>
+            <objects>kullok</objects>
+        </room>
+        <room id="9">
+            <description>A hegycsucson allsz, toled nem messze egy keritessel korulvett terulet kozepen egy hatalmas feher gomb all. Csak eszak fele tudsz lejutni.</description>
+            <characters>sp[]</characters>
+            <exits>E5</exits>
+        </room>
+        <room id="10">
+            <description>A falu vegen allsz egy keresztezodesben. Eszakra a foter, delre vasutallomas, keletre pedig egy hidat latsz.</description>
+            <characters>syrus</characters>
+            <exits>E6,K11,D14</exits>
+        </room>
+        <room id="11">
+            <description>Suru erdobe keveredtel. Delre, keletre es nyugatra mehetsz tovabb.</description>
+            <characters></characters>
+            <exits>K12,D15,NY10</exits>
+        </room>
+        <room id="12">
+            <description>Suru erdoben vagy, egy korhadt utjelzo tablan ezt olvasod: Eszakra vasutallomas, delre barlang, nyugatra pedig egy falut talalhatsz.</description>
+            <characters></characters>
+            <exits>E8,NY11,D16</exits>
+            <objects>evezo</objects>
+        </room>
+		<room id="13">
+		  <description>Beleptel az allomas epuletebe. Jobbrol a falon egy kep log [http://yeti.csend.be/koderszhu.jpg].</description>
+		  <characters>kalauz</characters>
+		  <exits>K14</exits>
+		  <objects>pendrive,hasis</objects>
+		</room>
+		<room id="14">
+		  <description>A sinek mellett allsz, delre vonat visz, nyugatra az allomas epuletet latod, eszakra pedig a faluba vezeto utat. Az allomassal szemben a sinek tuloldalan a folyoban ladikos emberek hadonasznak botokkal.</description>
+		  <characters></characters>
+		  <exits>E10,D4,NY13</exits>
+		</room>
+		<room id="15">
+		  <description>A folyoparton allsz, nehany ladikot latsz kikotve a partra. Eszakra erdot latsz, delre pedig egy barlangot. Kelet fele tul suru az erdo ahhoz, hogy arra menjel.</description>
+		  <characters></characters>
+		  <exits>E11,D1</exits>
+		  <objects>ladik</objects>
+		</room>
+		<room id="16">
+		  <description>Suru erdoben allsz, keletre toled barlang bejaratat latod, eszakra egy ut vezet.</description>
+		  <characters></characters>
+		  <exits>K5,E12</exits>
+		</room>
+	</rooms>
+	<characters>
+	   <character name="litch">
+	       <activity>magaban vihoraszik</activity>
+	       <hands>spangli</hands>
+	       <room>2</room>
+	   </character>
+	   <character name="_sh">
+	       <activity>halat arul</activity>
+	       <room>6</room>
+	       <hands>horgok,hal</hands>
+	   </character>
+	   <character name="PoTa">
+	       <activity>egy agyon fekszik</activity>
+	       <room>1</room>
+	       <hands>agy,spangli</hands>
+	   </character>
+       <character name="kalauz">
+        <activity>a szadba veri a faszat.</activity>
+        <room>13</room>
+       </character>
+       <character name="tema">
+        <activity> barangol</activity>
+        <room>8</room>
+       </character>
+       <character name="syrus">
+        <activity> iranyitja a forgalmat</activity>
+        <room>10</room>
+       </character>
+       <character name="ppfc">
+        <activity> teazik</activity>
+        <room>7</room>
+       </character>
+       <character name="wirving">
+        <activity> barangol</activity>
+        <room>4</room>
+       </character>
+       <character name="bishop">
+        <activity>kiser stachelen</activity>
+        <room>6</room>
+       </character>
+       <character name="samli">
+        <activity> magasan lobogo tuz korul boszorkanytancot jar.</activity>
+        <room>16</room>
+       </character>
+       <character name="dy">
+        <activity> nehany pendriveot kinal eladasra</activity>
+        <room>6</room>
+        <hands>pendrive</hands>
+       </character>
+       <character name="sp[]">
+        <activity>a hegyteton allva veri a faszat.</activity>
+        <room>9</room>
+        <hands>kullok,penz</hands>
+       </character>
+	</characters>
+	<objects>
+	   <object name="spangli">
+	       <description>szep szal ugyesen sodort cigaretta. legszivesebben egy sor mellett maris meggyujtanad.</description>
+           <target>samli</target>
+           <type>character</type>
+	       <success>Meggyujtod a cigit, beleszivsz, es atadod samlinak. Nehany slukk utan vetkozni kezdetek es orbitalisat kurtok.</success>
+           <fail>Meggyujtod a cigit, beleszivsz, kicsit lenntartod a fustot majd elegedetten hatradolve sohajtasz egyet. ZSIIIIR</fail>	       
+           <provides>null</provides>
+	   </object>
+	   <object name="hasis">
+	       <description>egy zacsko hasis.</description>
+	       <target>6</target>
+	       <type>room</type>
+	       <success>Korulnezel, de nem latsz rendort, ezert diszkreten elkezded arulni a haskat. Egy elte progmatos gyorsan meg is veszi toled</success>
+	       <fail>Elszivnad, de nincs se pipad se papirod es igazsag szerint jobban kene egy kis penz.</fail>
+	       <provides>penz</provides>
+	   </object>
+	   <object name="horgok">
+            <description>mindenfele meretu horgok wobblerek es kutyogatok</description>
+            <target>3</target>
+            <type>room</type>
+            <success>kiallsz a stegre es beveted a horgokat a vizbe. par perc mulva szerencsed van, es kirantasz egy hatalmas halat.</success>
+            <fail>belenyultal a horgos dobozba es csodalkozol hogy mind beleallt a tenyeredbe, balfasz?!</fail>
+            <provides>hal</provides>
+	   </object>
+	   <object name="hal">
+            <description>http://www.nagydunai.ngo.hu/kepek/csukafej.jpg</description>
+            <target>_sh</target>
+            <type>character</type>
+            <success>ezt a szep darab halat nem lehet visszautasitani, igy _sh megveszi toled.</success>
+            <fail>megenned, de utalod a halat, ezert arra gondolsz, talan a piacon adnak ezert a halert valamit.</fail>
+            <provides>penz</provides>
+            <counter>2</counter>
+	   </object>
+	   <object name="nyakorv">
+	       <description>bor nyakorv karikaval</description>
+	       <target>bishop</target>
+           <type>character</type>
+	       <success>bishop felcsatolja rad a nyakorvet es ugy kur meg apad hatan. miutan vegzett, elegedettsege jeleul ad egy spanglit</success>
+	       <fail>felrakod a nyakorvet de alig kapsz levegot benne, igy inkabb leveszed</fail>
+	       <provides>spangli</provides>
+	   </object>
+	   <object name="agy">
+	       <description>egyszemelyes agy kimustralt rugokkal</description>
+	       <target>null</target>
+           <type>character</type>
+	       <success>null</success>
+	       <fail>megis mit csinalnal egy kibaszott aggyal, el se birod. rakd mar le!</fail>
+	       <provides>null</provides>
+	   </object>
+	   <object name="kulacs">
+	       <description>bringas kulacs tele vizzel</description>
+	       <target>sp[]</target>
+           <type>character</type>
+	       <success>sp[] megkoszoni a kulacsot, belekortyol, hummog valamit majd halaja jeleul atnyujt egy kis penzt.</success>
+	       <fail>beleiszol a kulacsba, majd gorcsokben fetrengve terulsz el a foldon. soha ne igyal mas kulacsaba!</fail>
+	       <provides>penz</provides>
+	   </object>
+	   <object name="penz">
+	       <description>nehany darab papirpenz es egy jo marek csorgo apro</description>
+	       <target>6</target>
+           <type>room</type>
+	       <success>szinte csak halat kapni, ezert kivalasztasz egy szep darabot a penzedert.</success>
+	       <fail>nem latsz semmit amit meg lehetne vasarolni.</fail>
+	       <provides>hal</provides>
+	       <counter>6</counter>
+	   </object>
+	   <object name="kullok">
+	       <description>egy jo marek 2.0-as dt kullo</description>
+	       <target>sp[]</target>
+           <type>character</type>
+	       <success>sp[] elvesz toled egy kullot es megmutatja hogyan kell hasznalni. megfogjaa faszodat es tovig nyomja bele. Igy mar felall! Boldogan vigyorogsz, visszakaptad a szekszualis eletedet!</success>
+	       <fail>forgatod, nezegeted, de lovesed sincs mire lehet hasznalni. arra gondolsz, milyen jo lenne megkeresni sp[]-t hatha o tudja mik ezek.</fail>
+	       <provides>spangli</provides>
+	   </object>
+	   <object name="evezo">
+	       <description>egy par fa evezolapat</description>
+	       <target>15</target>
+           <type>room</type>
+	       <success>fogod az evezoket, beulsz egy ladikba, beevezel a folyo kozepere, es a ladikban talalt bottal probalod a falubelieket utanozni. probalkozasod nem marad sikertelen, egy szep nagy harcast fogsz ki a vizbol.</success>
+	       <fail>tudod, hogy ezek evezok, es tudod hogy legalabb egy ladikot kell talalnod hozzajuk hogy hasznalni tudd.</fail>
+	       <provides>hal</provides>
+	   </object>
+	   <object name="pendrive">
+	       <description>lofasz kacat</description>
+	       <target>6</target>
+           <type>room</type>
+	       <success>a piacon becsereled a pendriveot spanglira</success>
+	       <fail>a kibaszott erdoben nincsen szamitogep igy ez a targy teljesseggel hasznavehetetlen. talan ha elcserelned...</fail>
+	       <provides>spangli</provides>
+	   </object>
+	   <object name="ladik">
+	       <description>http://www.bestfishing.hu/images/fo2.jpg</description>
+	       <target>null</target>
+           <type>null</type>
+	       <success>null</success>
+	       <fail>azon morfondirozol, hol lehet szep lapos a folyopart ahol hasznalni tudnad a ladikodat. persze kellene evezo is hozza.</fail>
+	       <provides>null</provides>
+	   </object>
+	</objects>
+</config>
