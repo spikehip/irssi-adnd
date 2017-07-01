@@ -4,14 +4,17 @@ MAINTAINER Andras Bekesi <andras.bekesi@bikeonet.hu>
 RUN apt-get update && \
     apt-get -y install build-essential libexpat1 libexpat1-dev cpanminus irssi && \
     cpanm XML::Simple && \
-    mkdir -p /root/.irssi/scripts/autorun
+    adduser --system irssi 
 
-COPY adnd.pl /root/.irssi/scripts
-COPY map.xml /root/.irssi/scripts
-COPY config /root/.irssi/config
-COPY run.sh /run.sh
+USER irssi
+RUN mkdir -p /home/irssi/.irssi/scripts/autorun
 
-RUN ln -s /root/.irssi/scripts/adnd.pl /root/.irssi/scripts/autorun/adnd.pl
+COPY adnd.pl /home/irssi/.irssi/scripts
+COPY map.xml /home/irssi/.irssi/scripts
+COPY config /home/irssi/.irssi/config
+COPY run.sh /home/irssi/run.sh
 
-CMD /bin/bash /run.sh 
+RUN ln -s /home/irssi/.irssi/scripts/adnd.pl /home/irssi/.irssi/scripts/autorun/adnd.pl
+
+CMD /bin/bash /home/irssi/run.sh 
 

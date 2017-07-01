@@ -5,7 +5,7 @@ use XML::Simple;
 use vars qw($VERSION %IRSSI);
 
 my $xsl = XML::Simple->new();
-my $scene = $xsl->XMLin('/root/.irssi/scripts/map.xml');
+my $scene = $xsl->XMLin('/home/irssi/.irssi/scripts/map.xml');
 
 #print $scene->{rooms}->{room}->{'1'}->{'description'};
 
