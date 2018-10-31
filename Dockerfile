@@ -1,5 +1,5 @@
 FROM debian
-MAINTAINER Andras Bekesi <andras.bekesi@bikeonet.hu>
+LABEL maintainer Andras Bekesi <andras.bekesi@bikeonet.hu>
 
 RUN apt-get update && \
     apt-get -y install build-essential libexpat1 libexpat1-dev cpanminus irssi locales && \
