@@ -86,7 +86,7 @@
 		</room>
 		<room id="16">
 		  <description>Suru erdoben allsz, keletre toled barlang bejaratat latod, eszakra egy ut vezet.</description>
-		  <characters></characters>
+		  <characters>samli</characters>
 		  <exits>K5,E12</exits>
 		</room>
 	</rooms>
