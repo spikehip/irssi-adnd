@@ -4,7 +4,7 @@ LABEL maintainer Andras Bekesi <andras.bekesi@bikeonet.hu>
 RUN apt-get update && \
     apt-get -y install build-essential libexpat1 libexpat1-dev cpanminus irssi locales && \
     cpanm XML::Simple && \
-    adduser --system irssi && \
+    adduser irssi && \
     localedef -i en_US -f UTF-8 en_US.UTF-8
 
 USER irssi
