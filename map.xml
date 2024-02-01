@@ -8,7 +8,7 @@
 		</room>
 		<room id="2">
 		  <description>Zoldello reten vagy a folyo nyugati oldalan.</description>
-		  <characters></characters>
+		  <characters>litch</characters>
 		  <exits>D6</exits>
 		  <objects>nyakorv</objects>
 		</room>
@@ -19,7 +19,7 @@
 		</room>
 		<room id="4">
 		  <description>Vasuti megalloban allsz, a sinek eszak fele vezetnek,de nem tudod pontosan, hova, mert elegge kanyargosnak tunik.</description>
-		  <characters></characters>
+		  <characters>wirving</characters>
 		  <exits>E14,D8,NY3</exits>
 		  <objects>horgok</objects>
 		</room>
@@ -31,18 +31,18 @@
 		</room>
 		<room id="6">
 		  <description>Kis folyoparti falu foteren vagy. Eppen piac van, mindenfelet arulnak a helybeliek, de foleg halat.</description>
-		  <characters>_sh</characters>
+		  <characters>_sh,bishop,dy</characters>
 		  <exits>E2,D10,NY5</exits>
 		</room>
 		<room id="7">
 		  <description>Suru erdoben talalod magad, az uton eszak fele es kelet fele mehetsz tovabb.</description>
-		  <characters></characters>
+		  <characters>ppfc</characters>
 		  <exits>K8,E3</exits>
 		  <objects>hasis</objects>
 		</room>
         <room id="8">
             <description>Suru erdoben vagy egy utelagazas kozepen. Egy korhadt fatabla igazit utba, eszak fele vasutallomast jelez, nyugatra folyot, delre pedig egy falu nevet latod kiirva.</description>
-            <characters></characters>
+            <characters>tema</characters>
             <exits>E4,NY7,D12</exits>
             <objects>kullok</objects>
         </room>
