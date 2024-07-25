@@ -290,7 +290,7 @@ sub sig_nick {
   if ( exists $scene->{characters}->{character}->{$nick} ) {
       print "nickvaltas $nick => $newnick";
       $scene->{characters}->{character}->{$newnick} = $scene->{characters}->{character}->{$nick};
-      undef $scene->{characters}->{character}->{$nick};
+      delete $scene->{characters}->{character}->{$nick};
   }
 }
 
